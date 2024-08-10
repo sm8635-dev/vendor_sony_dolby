@@ -17,6 +17,10 @@
 # Dolby path
 DOLBY_PATH := vendor/sony/dolby
 
+# DolbyManager
+PRODUCT_PACKAGES += \
+   DolbyManager
+
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
    $(DOLBY_PATH)
