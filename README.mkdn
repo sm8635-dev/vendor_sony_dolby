@@ -12,7 +12,7 @@ For dolby media codecs to work add this line in your media codecs config (should
 To build, add the dolby effects in your device's audio effects config then inherit the dolby config by adding this in your device's makefile :-
 
 ```bash
-$(call inherit-product, hardware/dolby/dolby.mk)
+$(call inherit-product, vendor/sony/dolby/dolby.mk)
 ```
 
 Now, moving hidl definitions in manifest to device trees is completely absurd so stop overriding manifest in your device trees an example for such would be :-
@@ -43,14 +43,7 @@ The only change done above is changing := symbol to += so that manifest can't be
 
 At the end an example commit to properly implement it in your device tree could be :-
 
-[**1**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/8ece9a976087ed03f1adb447d0ac2a3f5f1a0d3c
-
-[**2**] https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/f5abe4a589d54d8363b0f3458e09e3c069cf6384
- 
-#### Tip pick anyone for Reference:
-          https://dumps.tadiphone.dev/dumps/xiaomi/vili/-/blob/missi_phone_global-user-14-UKQ1.231207.002-V816.0.5.0.UKDMIXM-release-keys/aosp-device-tree/proprietary-files.txt#L2072
-          https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/6a8f6aae347f9f864f17f2dfa5d541f83ab5b170
-          https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/5c593cbd2c19d571b7e62ea4bd6b8c864a4e1d9e
+[**1**] https://github.com/sm8635-dev/device_xiaomi_peridot/commit/a2146d56c0b57accad936834c6134c5b51a0a005
 
 # Credits:
  * [**HELLBOY017**](https://github.com/HELLBOY017)
