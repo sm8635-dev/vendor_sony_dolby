@@ -21,6 +21,9 @@ DOLBY_PATH := vendor/sony/dolby
 PRODUCT_PACKAGES += \
    DolbyManager
 
+# Flag
+TARGET_SHIPS_DOLBY := true
+
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
    $(DOLBY_PATH)
