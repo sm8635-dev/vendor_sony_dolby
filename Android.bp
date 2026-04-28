@@ -252,7 +252,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
 	name: "vendor.dolby.media.c2@1.0-service",
-	owner: "xiaomi",
+	owner: "sony",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"],
